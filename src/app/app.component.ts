@@ -56,6 +56,7 @@ export class AppComponent {
     testSpliceA.splice(0,1);/*2) Si ejecutamos el splice en la variable , nos cortara la cadena*/
     
     console.log(testSpliceB,testSpliceA);
+  }
 
 
 }
