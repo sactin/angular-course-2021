@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input,OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-test2',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test2.component.scss']
 })
 export class Test2Component implements OnInit {
+  
+  //Creación de inputs.
+  @Input() name: string;
+  @Input() lastName: string;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+ 
 
 }

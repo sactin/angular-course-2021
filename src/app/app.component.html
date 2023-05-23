@@ -1,6 +1,10 @@
 <p>App component</p>
 
-<ricardo-comp status="busy" (onSendData)="printDataRicardoComp($event)"></ricardo-comp>
+<!--Para pasar variables del .ts a la vista html, la propiedad la colocamos entre conchetes []="varuable"
+  * propiedades inputs se manejan entre corchetes []
+  * propiedades output se manejan entre parentesis(), cuando se ejecutan funciones, si no se ejecutan funciones
+    no se necesitan parentesis-->
+<ricardo-comp [status]="myStatus" (onSendData)="printDataRicardoComp($event)"></ricardo-comp>
 
 <app-test2></app-test2>
 

@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular2021';
+  myStatus = 'my statuss';
 
   constructor() {
     //Devuelve un array con los elementos encontrados.

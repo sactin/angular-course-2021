@@ -8,14 +8,14 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class Test1Component {
   @Input('status') statusTest: string = 'working';
 
-  @Output() onSendData = new EventEmitter();
+  @Output('onSendData') SendData = new EventEmitter();
 
   constructor() {}
 
   onClickTest(event:any) {
     console.log('EVENT CLICK:',event);
 
-    this.onSendData.emit({
+    this.SendData.emit({
       name:'ricardo',
       status:'busy'
     });
