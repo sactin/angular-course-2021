@@ -121,4 +121,8 @@ export class AppComponent {
   printDataRicardoComp(event: any) {
     console.log('RICARDO COMP', event);
   }
+
+  printData(event:any) {
+    console.log('CHILD COMP SEND DATA: ', event);
+  }
 }
